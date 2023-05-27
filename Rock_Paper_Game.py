@@ -5,6 +5,7 @@ print("---------------------------------ROCK_PAPER_SCISSORS---------------------
 print("The rules of the game are:")
 print("------------1 is for Paper------------\n------------0 is for Rock------------\n------------ -1 is for Scissors------------")
 
+
 score=0
 def game():
  global score 
@@ -16,7 +17,7 @@ def game():
 
 
     if user_choice<=1 and user_choice>=-1:
-     random_num = random.choice(list)
+     random_num = random.choice(list)#random.choice generates a random number from the list that is passed to it
      if user_choice == 0:
         if random_num == 1:
             print("You chose Rock, Computer chose Paper")
@@ -66,7 +67,7 @@ def game():
 
 game()
 
-decide=input("Do you want to play again? (y/n)") #need to fix the none value which this is returning
+decide=input("Do you want to play again? (y/n)") 
 
 if(decide=='y'):
     game()
